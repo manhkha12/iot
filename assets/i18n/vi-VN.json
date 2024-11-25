@@ -1,0 +1,35 @@
+{
+    "welcome": "Hello",
+
+"login": {
+    "input_email": "Nhập email",
+    "input_password": "Nhập mật khẩu",
+    "fogot_pass": "Quên mật khẩu?",
+    "title": "Đăng nhập",
+    "or": "hoặc",
+    "login_by_google": "Đăng nhập bằng Google",
+    "login_by_apple": "Đăng nhập bằng Apple",
+    "new_member": "Bạn chưa có tài khoản?",
+    "validate": {
+      "incorrect_email": "Vui lòng nhập đúng email",
+      "incorrect_pass": "Mật khẩu có ít nhất 6 ký tự",
+      "incorrect_userName":"Tên hiển thị phải có ít nhất 3 ký tự",
+      "pass_doesnt_match":"Mật khẩu không khớp"
+    }
+  },
+  "signup": {
+    "title": "Đăng ký",
+    "email": "Email",
+    "name_express": "Tên hiển thị",
+    "input_name_express": "Nhập tên hiển thị",
+    "password": "Mật khẩu",
+    "re_input_pass": "Nhập lại mật khẩu",
+    "you_have_an_account": "Bạn đã có tài khoản?",
+    "wrong_pass": "Mật khẩu không khớp"
+  },
+  "common": {
+    "skip": "Bỏ qua"
+  }
+
+}
+
