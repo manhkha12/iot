@@ -4,13 +4,15 @@ class LoginState {
   final String userName;
   final String rePass;
   final bool isSignUp;
+  final bool loginSuccess;
 
   LoginState(
       {this.email = '',
       this.password = '',
       this.userName = '',
       this.rePass = '',
-      this.isSignUp = false});
+      this.isSignUp = false,
+      this.loginSuccess=false});
 
   LoginState copyWith({
     String? email,
@@ -18,6 +20,7 @@ class LoginState {
     String? userName,
     String? rePass,
     bool? isSignUp,
+    bool?loginSuccess
   }) {
     return LoginState(
       email: email ?? this.email,
@@ -25,6 +28,7 @@ class LoginState {
       userName: userName ?? this.userName,
       rePass: rePass ?? this.rePass,
       isSignUp: isSignUp ?? this.isSignUp,
+      loginSuccess: loginSuccess?? this.loginSuccess
     );
   }
 

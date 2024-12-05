@@ -27,15 +27,6 @@ class $AssetsI18nGen {
 class $AssetsIconsGen {
   const $AssetsIconsGen();
 
-  /// File path: assets/icons/airplane.svg
-  SvgGenImage get airplane => const SvgGenImage('assets/icons/airplane.svg');
-
-  /// File path: assets/icons/alarm.svg
-  SvgGenImage get alarm => const SvgGenImage('assets/icons/alarm.svg');
-
-  /// File path: assets/icons/alarm_play.svg
-  SvgGenImage get alarmPlay => const SvgGenImage('assets/icons/alarm_play.svg');
-
   /// File path: assets/icons/arrow_down.svg
   SvgGenImage get arrowDown => const SvgGenImage('assets/icons/arrow_down.svg');
 
@@ -64,9 +55,6 @@ class $AssetsIconsGen {
   /// File path: assets/icons/chart.svg
   SvgGenImage get chart => const SvgGenImage('assets/icons/chart.svg');
 
-  /// File path: assets/icons/chef.svg
-  SvgGenImage get chef => const SvgGenImage('assets/icons/chef.svg');
-
   /// File path: assets/icons/cheveron_right.svg
   SvgGenImage get cheveronRight =>
       const SvgGenImage('assets/icons/cheveron_right.svg');
@@ -80,39 +68,11 @@ class $AssetsIconsGen {
   /// File path: assets/icons/dropdown.svg
   SvgGenImage get dropdown => const SvgGenImage('assets/icons/dropdown.svg');
 
-  /// File path: assets/icons/education.svg
-  SvgGenImage get education => const SvgGenImage('assets/icons/education.svg');
-
-  /// File path: assets/icons/entertainment.svg
-  SvgGenImage get entertainment =>
-      const SvgGenImage('assets/icons/entertainment.svg');
-
   /// File path: assets/icons/filter.svg
   SvgGenImage get filter => const SvgGenImage('assets/icons/filter.svg');
 
-  /// File path: assets/icons/food.svg
-  SvgGenImage get food => const SvgGenImage('assets/icons/food.svg');
-
-  /// File path: assets/icons/heart.svg
-  SvgGenImage get heart => const SvgGenImage('assets/icons/heart.svg');
-
-  /// File path: assets/icons/heart_filled.svg
-  SvgGenImage get heartFilled =>
-      const SvgGenImage('assets/icons/heart_filled.svg');
-
   /// File path: assets/icons/home.svg
   SvgGenImage get home => const SvgGenImage('assets/icons/home.svg');
-
-  /// File path: assets/icons/ic-medicine.svg
-  SvgGenImage get icMedicine =>
-      const SvgGenImage('assets/icons/ic-medicine.svg');
-
-  /// File path: assets/icons/income.svg
-  SvgGenImage get income => const SvgGenImage('assets/icons/income.svg');
-
-  /// File path: assets/icons/investment.svg
-  SvgGenImage get investment =>
-      const SvgGenImage('assets/icons/investment.svg');
 
   /// File path: assets/icons/last_update.svg
   SvgGenImage get lastUpdate =>
@@ -124,48 +84,29 @@ class $AssetsIconsGen {
   /// File path: assets/icons/menu.svg
   SvgGenImage get menu => const SvgGenImage('assets/icons/menu.svg');
 
-  /// File path: assets/icons/moto.svg
-  SvgGenImage get moto => const SvgGenImage('assets/icons/moto.svg');
-
   /// File path: assets/icons/other.svg
   SvgGenImage get other => const SvgGenImage('assets/icons/other.svg');
-
-  /// File path: assets/icons/outcome.svg
-  SvgGenImage get outcome => const SvgGenImage('assets/icons/outcome.svg');
 
   /// File path: assets/icons/pause.svg
   SvgGenImage get pause => const SvgGenImage('assets/icons/pause.svg');
 
-  /// File path: assets/icons/play.svg
-  SvgGenImage get play => const SvgGenImage('assets/icons/play.svg');
-
   /// File path: assets/icons/plus.svg
   SvgGenImage get plus => const SvgGenImage('assets/icons/plus.svg');
 
+    /// File path: assets/icons/temparury.svg
+  SvgGenImage get tempatury => const SvgGenImage('assets/icons/tempatury.svg');
+
+      /// File path: assets/icons/humidity.svg
+  SvgGenImage get humidity => const SvgGenImage('assets/icons/humidity.svg');
+
   /// File path: assets/icons/remove.svg
   SvgGenImage get remove => const SvgGenImage('assets/icons/remove.svg');
-
-  /// File path: assets/icons/salary.svg
-  SvgGenImage get salary => const SvgGenImage('assets/icons/salary.svg');
-
-  /// File path: assets/icons/saving.svg
-  SvgGenImage get saving => const SvgGenImage('assets/icons/saving.svg');
-
-  /// File path: assets/icons/service.svg
-  SvgGenImage get service => const SvgGenImage('assets/icons/service.svg');
 
   /// File path: assets/icons/settings.svg
   SvgGenImage get settings => const SvgGenImage('assets/icons/settings.svg');
 
   /// File path: assets/icons/share.svg
   SvgGenImage get share => const SvgGenImage('assets/icons/share.svg');
-
-  /// File path: assets/icons/shop_house.svg
-  SvgGenImage get shopHouse => const SvgGenImage('assets/icons/shop_house.svg');
-
-  /// File path: assets/icons/shopping_cart.svg
-  SvgGenImage get shoppingCart =>
-      const SvgGenImage('assets/icons/shopping_cart.svg');
 
   /// File path: assets/icons/logout.svg
   SvgGenImage get logout => const SvgGenImage('assets/icons/logout.svg');
@@ -179,16 +120,22 @@ class $AssetsIconsGen {
   /// File path: assets/icons/copy.svg
   SvgGenImage get copy => const SvgGenImage('assets/icons/copy.svg');
 
+  /// File path: assets/icons/light.svg
+  SvgGenImage get light => const SvgGenImage('assets/icons/light.svg');
+
+  /// File path: assets/icons/fan.svg
+  SvgGenImage get fan => const SvgGenImage('assets/icons/fan.svg');
+
+  /// File path: assets/icons/door.svg
+  SvgGenImage get door => const SvgGenImage('assets/icons/door.svg');
+
   /// File path: assets/icons/stateError.svg
   SvgGenImage get stateError =>
       const SvgGenImage('assets/icons/stateError.svg');
 
   /// List of all assets
   List<SvgGenImage> get values => [
-        airplane,
         logout,
-        alarm,
-        alarmPlay,
         arrowDown,
         arrowLeft,
         arrowRight,
@@ -201,39 +148,27 @@ class $AssetsIconsGen {
         stateError,
         google,
         apple,
-        chef,
+        tempatury,
+        humidity,
         cheveronRight,
         clockFill,
         dots,
         dropdown,
-        education,
-        entertainment,
         filter,
-        food,
-        heart,
-        heartFilled,
         home,
-        icMedicine,
-        income,
-        investment,
         lastUpdate,
         level,
         menu,
-        moto,
         other,
-        outcome,
         pause,
-        play,
         plus,
         remove,
-        salary,
-        saving,
-        service,
         settings,
         share,
-        shopHouse,
-        shoppingCart,
         copy,
+        light,
+        fan,
+        door
       ];
 }
 

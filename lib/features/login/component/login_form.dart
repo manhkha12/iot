@@ -65,21 +65,28 @@ class _LoginState extends State<LoginForm> {
           const SizedBox(
             height: 20,
           ),
-          BlocBuilder<LoginCubit, LoginState>(
-            builder: (context, state) {
-              return AppButton(
-                onPressed: state.valid
-                    ? () {
-                        var valid = _formKey.currentState!.validate();
-                        if (valid) {
-                          Navigator.pushNamed(context, RouteName.splash);
-                        }
-                      }
-                    : null,
-                label: 'login.title'.tr(),
-                textStyle: const TextStyle(fontSize: 16),
-              );
+          BlocListener<LoginCubit, LoginState>(
+            listener: (context, state) {
+              if (state.loginSuccess) {
+                Navigator.pushNamed(context, RouteName.splash);
+              }
             },
+            child: BlocBuilder<LoginCubit, LoginState>(
+              builder: (context, state) {
+                return AppButton(
+                  onPressed: state.valid
+                      ? () async {
+                          var valid = _formKey.currentState!.validate();
+                          if (valid) {
+                            await context.read<LoginCubit>().login();
+                          }
+                        }
+                      : null,
+                  label: 'login.title'.tr(),
+                  textStyle: const TextStyle(fontSize: 16),
+                );
+              },
+            ),
           ),
           const SizedBox(
             height: 15,

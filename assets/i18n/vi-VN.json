@@ -29,7 +29,19 @@
   },
   "common": {
     "skip": "Bỏ qua"
+  },
+"home":{
+    "house_door":"Cửa nhà",
+    "living_room":"Phòng khách",
+    "bed_room":"Phòng ngủ",
+    "kitchen":"Bếp",
+    "temperature":"Nhiệt đô trong nhà hiện giờ ",
+    "smart_home":"Smart Home",
+    "greeting": {
+      "morning": "Chào buổi sáng!",
+      "afternoon": "Chào buổi chiều!",
+      "evening": "Chào buổi tối!"
+    }
   }
-
 }
 

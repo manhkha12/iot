@@ -1,3 +1,4 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:iot/app_config.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -14,6 +15,8 @@ void main() {
       await FlutterConfig.loadEnvVariables();
       final configureApp = await getCurrentConfigs();
       await di.setupDI(configureApp);
+      
+      await Firebase.initializeApp();
       runApp(
         AppLocalization(
           initLocale: const AppLocale(locale: Locale('vi', 'VN')),

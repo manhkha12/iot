@@ -131,6 +131,7 @@ class BottomNavigationState extends State<BottomNavigation> with SingleTickerPro
                     changeToTab(0);
                   },
                 ),
+                const SizedBox(width: 60),
                 _TabIcon(
                   icon: items[1].icon,
                   activeColor: widget.activeColor,
@@ -140,25 +141,8 @@ class BottomNavigationState extends State<BottomNavigation> with SingleTickerPro
                     changeToTab(1);
                   },
                 ),
-                const SizedBox(width: 60),
-                _TabIcon(
-                  icon: items[2].icon,
-                  activeColor: widget.activeColor,
-                  inActiveColor: widget.inActiveColor,
-                  isSelected: selectedIndex == 2,
-                  onTap: () {
-                    changeToTab(2);
-                  },
-                ),
-                _TabIcon(
-                  icon: items[3].icon,
-                  activeColor: widget.activeColor,
-                  inActiveColor: widget.inActiveColor,
-                  isSelected: selectedIndex == 3,
-                  onTap: () {
-                    changeToTab(3);
-                  },
-                )
+                
+                
               ],
             ),
             Positioned(
