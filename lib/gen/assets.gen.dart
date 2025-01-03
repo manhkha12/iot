@@ -201,13 +201,14 @@ class $AssetsImagesGen {
 
   /// File path: assets/images/todo.json
   String get todo => 'assets/images/todo.json';
-
+  
   /// File path: assets/images/user.png
   AssetGenImage get user => const AssetGenImage('assets/images/user.png');
-
+  /// File path: assets/images/CC.GIFGIF
+  AssetGenImage get cc => const AssetGenImage('assets/images/cc.gif');
   /// List of all assets
   List<dynamic> get values =>
-      [card1, card2, card3, card4, card5, cooking, invest, sharing, todo, user];
+      [card1, card2, card3, cc,card4, card5, cooking, invest, sharing, todo, user];
 }
 
 class Assets {

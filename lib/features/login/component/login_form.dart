@@ -68,7 +68,7 @@ class _LoginState extends State<LoginForm> {
           BlocListener<LoginCubit, LoginState>(
             listener: (context, state) {
               if (state.loginSuccess) {
-                Navigator.pushNamed(context, RouteName.splash);
+                Navigator.pushNamed(context, RouteName.main);
               }
             },
             child: BlocBuilder<LoginCubit, LoginState>(

@@ -85,7 +85,7 @@ class _ApplicationState extends State<Application> {
         supportedLocales: context.supportedLocales,
         locale: context.appLocale.locale,
         localizationsDelegates: context.localizationDelegates,
-        initialRoute: RouteName.main,
+        initialRoute: RouteName.login,
         onGenerateRoute: onGenerateRoutes(),
         navigatorObservers: [
           BotToastNavigatorObserver(),

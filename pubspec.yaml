@@ -30,6 +30,11 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_gif: ^0.0.4
+  vibration: ^1.7.4
+  flutter_ringtone_player: ^3.0.0
+
+
 
   
   firebase_auth: ^5.2.0

@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:iot/features/bell/bell_screen.dart';
-import 'package:iot/features/chart/chart_screen.dart';
 import 'package:iot/features/homepage/splash_screen.dart';
 import 'package:iot/features/menu/menu_screen.dart';
 import 'package:iot/gen/assets.gen.dart';
